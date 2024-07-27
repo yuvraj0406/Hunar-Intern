@@ -1,0 +1,193 @@
+body {
+  background-color: #94bbe9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+header {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 29%, rgba(238,174,198,1) 34%, rgba(238,174,202,1) 38%, rgba(219,176,209,1) 51%, rgba(199,179,216,1) 54%, rgba(180,182,222,1) 65%, rgba(165,184,227,1) 73%, rgba(148,187,233,1) 100%);
+  color: rgb(64, 35, 35);
+  padding: 40px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 10px;
+  margin-left: -300px;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 20px;
+  
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #2c302c;
+  transform: scale(1.1);
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#about p {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+#about {
+  position: relative;
+  text-align: center;
+}
+
+
+
+.profile-img {
+  position: relative;
+  z-index: 2; 
+  border-radius: 50%; 
+  width: 350px; 
+  height: 350px; 
+  object-fit: cover; 
+  transition: transform 0.2s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05); 
+}
+
+#projects .project-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #000;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-link {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link.github {
+  background-color: #333;
+}
+
+.contact-link.github:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.contact-link.linkedin {
+  background-color: #0077b5;
+}
+
+.contact-link.linkedin:hover {
+  background-color: #005582;
+  transform: scale(1.1);
+}
+
+.contact-link.whatsapp {
+  background-color: #25d366;
+}
+
+.contact-link.whatsapp:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #76FF03;
+}
